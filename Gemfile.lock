@@ -55,6 +55,9 @@ GEM
       ffi (~> 1.0, >= 1.0.11)
     concurrent-ruby (1.0.5)
     crass (1.0.3)
+    debase (0.2.2.beta14)
+      debase-ruby_core_source (>= 0.9.11)
+    debase-ruby_core_source (0.10.2)
     erubi (1.7.0)
     ffi (1.9.18)
     globalid (0.4.1)
@@ -114,6 +117,8 @@ GEM
     rb-fsevent (0.10.2)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
+    ruby-debug-ide (0.6.0)
+      rake (>= 0.8.1)
     ruby_dep (1.5.0)
     rubyzip (1.2.1)
     sass (3.5.5)
@@ -164,11 +169,13 @@ PLATFORMS
 DEPENDENCIES
   byebug
   capybara (~> 2.13)
+  debase (~> 0.2.2.beta14)
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
   pg (~> 0.18)
   puma (~> 3.7)
   rails (~> 5.1.4)
+  ruby-debug-ide
   sass-rails (~> 5.0)
   selenium-webdriver
   spring

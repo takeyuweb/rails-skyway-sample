@@ -14,5 +14,8 @@ module SkyMeeting
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
+    if ENV['DOCKER']
+      Rails.application.config.paths.add 'config/database', with: 'config/database.docker.yml'
+    end
   end
 end
