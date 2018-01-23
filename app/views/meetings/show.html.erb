@@ -7,3 +7,25 @@
 
 <%= link_to 'Edit', edit_meeting_path(@meeting) %> |
 <%= link_to 'Back', meetings_path %>
+
+<div id="skyway" data-skyway="3cb86ff4-f801-42dd-89ff-fa541b8346ad">
+  <!-- Video area -->
+  <div d="video-container">
+    <video id="their-video" autoplay></video>
+    <video id="my-video" muted="true" autoplay></video>
+  </div>
+
+  <div>
+    <p>Your id: <span id="my-id">...</span></p>
+    <p>Share this id with others so they can call you.</p>
+    <h3>Make a call</h3>
+    <form id="make-call" class="pure-form">
+      <input type="text" placeholder="Call user id..." id="callto-id">
+      <button class="pure-button pure-button-success" type="submit">Call</button>
+    </form>
+    <form id="end-call" class="pure-form">
+      <p>Currently in call with <span id="their-id">...</span></p>
+      <button class="pure-button pure-button-success" type="submit">End Call</button>
+    </form>
+  </div>
+</div>
